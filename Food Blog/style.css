@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+height: 100vh;   
+}
+
+h1 {
+    font-family: 'Great Vibes';
+}
+
+.hover1:hover {
+    color: darkgreen;
+}
+
+.hover2:hover {
+    color: darkred;
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin: 10px;
+    align-items: center;
+    padding: 0 5px 5px 5px;
+}
+
+.navbar2 {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    margin: 10px;
+    align-items: center;
+    padding: 0 0 10px 0;
+}
+
+.navbar1 a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    font-style: italic;
+    font-family: 'Fraunces';
+}
+
+.navbar1 a:hover {
+    font-weight: bold;
+}
+
+.navbar2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Fraunces';
+    transition: all ease 0.4s;  
+}
+
+.navbar2 a:hover {
+    font-size: 1.2rem;   
+}
+
+i:hover {
+   color: lightgreen;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    background-image: linear-gradient(beige, brown);
+}
+
+.grid-items:nth-child(1) {
+    background-image: url('/img/pizza-5275191.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-items:nth-child(2) {
+    background-image: url('/img/hamburger-4008822.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-items:nth-child(3) {
+    background-image: url('/img/toast-7009956.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-items:nth-child(4) {
+    background-image: url('/img/salmon-5098232.jpg');
+    background-size: cover;
+    background-position: center;
+}
+    
+.grid-items:nth-child(5) {
+    background-image: url('/img/pasta-3547078.jpg');
+    background-size: cover;
+    background-position: center;
+}
+    
+.grid-items:nth-child(6) {
+    background-image: url('/img/salad-5308953.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-items:nth-child(7) {
+    background-image: url('/img/food-3824648.jpg');
+    background-size: cover;
+    background-position: center;
+}
+        
+.grid-items:nth-child(8) {
+    background-image: url('/img/coffee-2306471.jpg');
+    background-size: cover;
+    background-position: center;
+}
+        
+.grid-items:nth-child(9) {
+    background-image: url('/img/pancake-2714106.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-items {
+    height: 300px;
+    font-family: 'Fraunces';
+    position: relative;
+}
+
+.grid-items p {
+    position: absolute;
+    bottom: 0;
+    margin-inline: auto;
+    text-align: center;
+    width: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.395);
+    padding-block: 1rem;
+}
+
+footer {
+    padding: 5px 0 0 0;
+    background-color: black;
+    margin: 10px 0 0 0;
+}
+
+.navfooter1 {
+    display: flex;
+    justify-content: space-around;
+    height: 5vh;
+    text-align: center;
+    font-family: 'Fraunces';
+    text-decoration: none;
+}
+
+.navfooter2 {
+    text-align: center;
+    margin: 15px;
+}
+
+.navfooter1 > * {
+text-decoration: none;
+}
+
+.copyright {
+    font-family: 'Fraunces';
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+/* HERE START THE ROTM STYLING */
+.rotm {
+    background-image: linear-gradient(beige, brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.flex {
+    display: flex;
+    background-color: whitesmoke;
+    gap: 2rem;
+    font-size: .8rem;
+    font-family: 'Fraunces';
+}
+
+.recipe {
+    font-weight: bold;
+}
+
+
+/* HERE START ABOUT STYLING */
+
+
+.about {
+    font-family: 'Fraunces';
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+    background-image: linear-gradient(beige, brown);
+}
+
+
+
+@media(width >=600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(width >= 900px) {
+    .grid {
+        grid-template-columns:repeat(3, 1fr);
+    }
+}
